@@ -1,7 +1,9 @@
 # SMS-forward Webhook Server
 
 A simple Python Flask webhook server designed to receive SMS messages forwarded from applications like SmsForwarder (https://github.com/pppscn/SmsForwarder), store them in an SQLite database, and provide a web interface to view the received messages with authentication and frontend decryption.
-![](./example.png)
+
+<img src="example.png" alt="Application Screenshot" style="max-width: 50%; height: auto;">
+
 `"I'm grateful for Gemini-2.5-pro's help, which allowed me to develop this demo project with unbelievable speed.`
 
 ## Features
