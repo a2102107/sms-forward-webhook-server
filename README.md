@@ -25,7 +25,7 @@ A simple Python Flask webhook server designed to receive SMS messages forwarded 
 
 1.  Clone the repository:
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/a2102107/sms-forward-webhook-server.git
     cd sms-webhook
     ```
 2.  Install dependencies using pip:
@@ -75,3 +75,7 @@ Configure your SMS forwarding application (like SmsForwarder) to send POST, GET,
 *   **Frontend Decryption (Compromise for HTTP):** Decrypting messages in the browser is implemented as a compromise when using the server over HTTP (instead of the recommended HTTPS). This means the decryption logic and key derivation method are exposed in the frontend JavaScript code. While the `BASE_DECRYPTION_STRING` itself is not directly in the JS, the method to derive the AES/HMAC keys from it is. This approach is **not recommended for sensitive data in untrusted environments**.
 *   **Change Default Credentials and Keys:** Always change the default `FLASK_SECRET_KEY`, `WEB_USERNAME`, `WEB_PASSWORD`, and `BASE_DECRYPTION_STRING` in `config.py` before deploying to a production environment.
 *   **HTTPS:** For production use, it is highly recommended to deploy this server behind a reverse proxy (like Nginx or Caddy) and use HTTPS to encrypt communication between the client and the server. HTTPS provides encryption in transit, protecting both the login credentials and the encrypted message data from eavesdropping.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

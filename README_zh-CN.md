@@ -25,7 +25,7 @@
 
 1.  克隆仓库：
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/a2102107/sms-forward-webhook-server.git
     cd sms-webhook
     ```
 2.  使用 pip 安装依赖：
@@ -75,3 +75,7 @@ py app.py
 *   **前端解密（HTTP 的折衷方案）：** 在浏览器中解密消息是作为使用 HTTP（而非推荐的 HTTPS）时的一种折衷方案实现的。这意味着解密逻辑和密钥派生方法暴露在前端 JavaScript 代码中。虽然 `BASE_DECRYPTION_STRING` 本身不直接在 JS 中，但从它派生 AES/HMAC 密钥的方法是暴露的。在不受信任的环境中，**不建议将此方法用于敏感数据**。
 *   **更改默认凭据和密钥：** 在部署到生产环境之前，务必更改 `config.py` 中的默认 `FLASK_SECRET_KEY`、`WEB_USERNAME`、`WEB_PASSWORD` 和 `BASE_DECRYPTION_STRING`。
 *   **HTTPS：** 对于生产环境使用，强烈建议将此服务端部署在反向代理（如 Nginx 或 Caddy）后面，并使用 HTTPS 来加密客户端和服务端之间的通信。HTTPS 提供传输过程中的加密，保护登录凭据和加密的消息数据免遭窃听。
+
+## 许可证
+
+本项目采用 MIT 许可证 - 详情请参阅 [LICENSE](LICENSE) 文件。
