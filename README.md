@@ -2,7 +2,7 @@
 
 A simple Python Flask webhook server designed to receive SMS messages forwarded from applications like SmsForwarder, store them in an SQLite database, and provide a web interface to view the received messages with authentication and frontend decryption.
 
-`Thanks Gemini 2.5 pro.`
+`Thank Gemini 2.5 pro.`
 
 ## Features
 
