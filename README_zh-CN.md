@@ -1,8 +1,8 @@
 # sms-forward Webhook 服务端
 
-一个简单的 Python Flask webhook 服务端，用于接收来自 SmsForwarder 等应用的短信转发消息，将其存储在 SQLite 数据库中，并提供一个带有身份认证和前端解密功能的 Web 界面来查看接收到的消息。
+一个简单的 Python Flask webhook 服务端，用于接收来自 SmsForwarder（https://github.com/pppscn/SmsForwarder） 等应用的短信转发消息，将其存储在 SQLite 数据库中，并提供一个带有身份认证和前端解密功能的 Web 界面来查看接收到的消息。
 
-`Thanks Gemini 2.5 pro.`
+`Thanks to Gemini 2.5 pro.`
 
 ## 功能特性
 
