@@ -1,0 +1,4 @@
+/.venv
+/.vscode
+/sms_webhook.db
+/__pycache__

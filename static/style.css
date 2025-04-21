@@ -1,0 +1,122 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+#messages-container {
+    margin-top: 20px;
+}
+
+.message {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message p {
+    margin: 5px 0;
+}
+
+.message strong {
+    color: #555;
+}
+
+.message-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee; /* Add a separator */
+    padding-bottom: 5px;
+}
+
+.message-content {
+    margin-bottom: 5px;
+    /* Removed direct content styling */
+}
+
+.message-content strong {
+    display: block; /* Make the "Content:" label a block element */
+    margin-bottom: 5px; /* Add space below the label */
+    color: #333; /* Make the label color slightly darker */
+}
+
+.content-text {
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+    word-break: break-word; /* Break long words */
+    padding-left: 15px; /* Add indentation to the content text */
+    border-left: 2px solid #eee; /* Add a subtle left border */
+    margin-left: 5px; /* Add some space between border and content */
+}
+
+.timestamp {
+    font-weight: normal;
+    font-size: 0.9em;
+    color: #666;
+    margin-left: 15px; /* Add some space */
+}
+
+.message-details {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    font-size: 0.9em;
+    color: #555;
+    background-color: #f9f9f9; /* Slightly different background for details */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.message-details p {
+    margin: 3px 0; /* Reduce margin for details paragraphs */
+}
+
+.decrypt-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #e9e9e9;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.decrypt-section label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.decrypt-section input[type="password"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 200px; /* Adjust width as needed */
+}
+
+.decrypt-section button {
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.decrypt-section button:hover {
+    background-color: #218838;
+}
+
+#decrypt-status {
+    margin-left: 10px;
+    font-weight: bold;
+}

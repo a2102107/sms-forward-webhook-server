@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Webhook Messages</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Received Messages</h1>
+
+    <div class="decrypt-section">
+        <label for="decrypt-key">Decryption Key:</label>
+        <input type="password" id="decrypt-key" placeholder="Enter decryption key">
+        <button id="decrypt-button">Decrypt Messages</button>
+        <span id="decrypt-status"></span>
+    </div>
+
+    <div id="messages-container">
+        <!-- Messages will be loaded here by script.js -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
